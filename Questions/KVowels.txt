@@ -1,0 +1,38 @@
+K Vowels
+You are given a string S of length N and an integer K. The string contains both lower case and upper case alphabets, denoting different types of candies. The lower case and upper case alphabets denote same type of candies, i.e. A and a denotes same type of candy. There are some special candies denoted by vowels. You want to eat all the candies but there are two restrictions.
+
+You have to pick continous candies, i.e. a substring of the given string S.
+The picked candies must have exactly K distinct special candies.
+You have to find the maximum number of candies you can eat.
+
+NOTE: The vowels are 'a', 'e', 'i', 'o' and 'u'.
+
+INPUT:
+The first line of input contains an integer T denoting the number of test cases.
+
+Each testcase consists of two lines of input.
+
+The first line of each testcase consist of two integers N and K.
+
+The next line of the testcase contains the string S.
+
+OUTPUT:
+Print the maximum number of candies you can eat.
+
+Constraints:
+
+1 ≤ T ≤ 10
+1 ≤ N ≤ 106
+0 ≤ K ≤ 5
+ 
+
+Sample Input
+1
+20 1
+tHeracEBetwEEntheTwo
+Sample Output
+14
+Explanation
+The maximum number of candies you can eat with exactly 1 distinct special candy is 14 ("cEBetwEEntheTw"). The special candy is "e".
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.

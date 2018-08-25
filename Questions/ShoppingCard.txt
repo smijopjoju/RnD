@@ -1,0 +1,53 @@
+Shopping Cart
+Implement an application based on the following class diagram:
+
+​
+
+Details
+
+Product (Product.java) represents an item with the following attributes:
+
+name: Name of the product.
+
+price: Price of a single unit
+
+Two products are same if their name (case insensitive) and price is equal.
+
+Cart (Cart.java) contains items that are selected by the user. It allows you to do the following operations:
+
+addItem (Product product, integer amount): Adds a product to the cart with the quantity set to amount. If the amount is not greater than zero, then an exception is raised.
+
+removeItem (Product product): product is deleted entirely from the cart. If the product is not present in the cart, then an exception is raised.
+
+generateInvoice(): Prints the receipt on the standard output in the following format:
+
+<Name of Product1> <Quantity> <Total price for this product>
+<Name of Product2> <Quantity> <Total price for this product>
+.
+.
+.
+<Name of ProductN> <Quantity> <Total price for this product>
+Total price: <Total amount>
+All the prices must be printed up to 2 decimal places.
+
+Example:
+Book 1 100.00
+Pen 5 50.00
+Total price: 150.00
+checkOut(): Items in the user's cart are removed from the inventory and the cart is emptied.
+
+emptyCart(): Items in the user's cart are discarded. Inventory is left unchanged.
+
+Inventory (Inventory.java) represents the inventory of the store. It maintains a list of all the items and the respective quantities that are currently in stock.
+
+addItems (Map<Product, Integer> items) represents the products that are added to the inventory. The key of the map represents a product to be added to the inventory. The value of the key represents the respective quantities of items added. If the quantity of any product is not greater than or equal to zero, then an exception is raised.
+
+removeItems (Map<Product, Integer>) represents items that are to be removed from the inventory. The key of the map represents the product to be removed. The value of the key represents the respective quantities of items removed. If the quantity of any item to be removed is more than amount of the item that is currently available in the inventory, then an exception is raised and the inventory is not changed. If the quantity of any product is not greater than or equal to zero, then an exception is raised.
+
+Inventory is also a singleton class i.e. it can only have exactly one instance which must be shared by all the carts.
+
+ 
+
+ 
+
+ 

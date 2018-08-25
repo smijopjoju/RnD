@@ -1,0 +1,43 @@
+Maximize Array Sum
+You are given an array  A of size N. You can fix any element, say K of the array and all the elements in the array greater than or equal to K become K and all the elements less than K multiplied by -1. You have to find the maximum sum of the array after fixing K .
+
+Input Format
+
+The first line contains T, the number of test cases.
+For each Test case :
+The first line contains an integer N, size of the array.
+The second line contains N space-separated integers, the ith of which is A[i].
+
+Input Constraints
+
+1≤T≤105
+2≤N≤105
+0≤A[i]≤106
+Sum of N all over testcases doesn't not exceed 106.
+
+Output Format
+
+For each test case, print the maximum sum of the array by fixing an element K.
+Answer for each test case should come in a new line.
+
+Note
+
+Candidates are expected to write complete code of searching, sorting etc. (if they are being used in the code) instead of using builtin functions provided by the language library.
+Using builtin functions may lead to disqualification from the shortlisting process.
+
+ 
+
+Sample Input
+1
+3
+2 3 1
+Sample Output
+3
+Explanation
+If we fix K=1, answer = 1+1+1 = 3
+If we fix K=2, answer = 2+2-1 = 3
+If we fix K=3, answer = 3-1-2= 0
+
+Maximum among them is 3.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.

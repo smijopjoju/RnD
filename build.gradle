@@ -1,0 +1,22 @@
+
+apply plugin: 'java-library'
+
+
+repositories {
+    	maven { url "http://10.91.59.100:9090/artifactory/libs-release/" }
+    	maven { url "https://bhihoutfsnuget/maven2/Maven" }		
+}
+
+dependencies {
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:21.0'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'    
+	compile group: 'org.springframework', name: 'spring-web', version: '1.5.2.RELEASE'
+	compile group: 'com.bhge.prod.link', name: 'prod-alarm-config-service-objects', version: '1.0.0'    
+}
+

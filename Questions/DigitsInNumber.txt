@@ -1,0 +1,52 @@
+Digits in a Number
+Let's say 1,2,3 are the only digits which exists in a unique number system, so the numbers will be 1,2,3,11,12,13,21.... in ascending order .
+
+1st number is 1 and number of digits is 1
+
+4th will be 11 and number of digits is 2
+
+14th will be 112 and number of digits will be 3
+
+40th will be 1111 and number of digits will be 4
+
+You have to find number of digits of Nth term in unique number system .
+
+Input :
+
+First line T contains number of testcases
+
+Next T lines contains N
+
+Output :
+
+Number of digits in Nth number
+
+Constraints
+
+1≤T≤105
+
+1≤N≤1018
+
+Sample Input
+4
+1
+4
+14
+40
+Sample Output
+1
+2
+3
+4
+Explanation
+1st number is 1 and number of digits is 1
+
+4th will be 11 and number of digits is 2
+
+14th will be 112 and number of digits will be 3
+
+40th will be 1111 and number of digits will be 4
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB

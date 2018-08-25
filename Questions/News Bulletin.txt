@@ -1,0 +1,35 @@
+News Bulletin
+[Problem Statement]
+
+Develop a pseudo full stack application for News Bulletin. You are expected to use the dump provided and write an end to end web app.
+
+Your backend should expose APIs containing the news data which your frontend should consume and list them on the front end.
+
+
+[Minimum requirement]
+
+— Use of CSV file and dump it in database.
+
+— Write a functional backend and frontend in tech stack mentioned below.
+
+— The data sharing between backend and frontend must be in JSON via REST APIs.
+
+— List all the news headlines on the front end.
+
+— Zip all your source code, executables, screenshots and upload.
+
+
+[Plus Point]
+
+— Provide feature to sort articles via publisher name.
+
+— Make listed items clickable. Once clicked redirect to the original article url.
+
+— Implement a functionality to search article by name.
+
+— Zip all your source code, executables, screenshots and upload.
+
+
+[Guide]
+
+News Bulletin Dump: http://hck.re/VVG4LM

@@ -1,0 +1,83 @@
+Pepper and Contiguous Even Subarray <Debugging>
+This is a DEBUGGING question.
+
+You have an array of length N. A subarray is called Interesting if it contains only even numbers. You have to  find the maximum length of such Interesting subarray.
+
+You are given a code which does the given task but has some bugs (errors). You have to make changes in the given function such that the code handles all the cases for errors and generate correct output every time.
+
+Input
+First line contains T , denoting number of test cases.
+Each test case contains two lines:
+    - First line contains an integer N denoting the size of the array.
+    - Second line contains N space seperated integers denoting the value of array elements.
+
+Ouput:
+For each test case, print the maximum length of Interesting subarray. If no such subarray exist,print -1.
+
+Input Constraints:
+
+1≤T≤10
+
+1≤N≤105
+
+1≤A[i]≤106
+
+Note:
+
+The input and output is handled by the code itself. You are just supposed to correct the function.
+
+Sample Input
+1
+4
+5 2 4 7
+Sample Output
+2
+
+Explanation
+We can select 2nd and 3rd element as both are even numbers and form a subarray of length 2.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+
+
+Source Code
+-------------------------------------------------------------------------------------------
+===========================================================================================
+import java.io.*;
+import java.util.*;
+
+
+public class TestClass {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter wr = new PrintWriter(System.out);
+        int T = Integer.parseInt(br.readLine().trim());
+        for(int t_i=0; t_i<T; t_i++)
+        {
+            int N = Integer.parseInt(br.readLine().trim());
+            String[] inp = br.readLine().split(" ");
+            int[] A=new int[N];
+            for(int i=0;i<N;i++)
+            {
+                A[i] = Integer.parseInt(inp[i]);
+            }
+            int ans = solve(N, A);
+            System.out.println(ans);
+         }
+
+         wr.close();
+         br.close();
+    }
+    static int solve(int N, int[] A) {
+        //editable area
+        int ans=0;
+        int cnt=0;
+        for(int i=0;i<N;i++) {
+            if(A[i]%2==0) cnt++;
+            else {
+                ans=Math.max(ans,cnt);
+                cnt=0;
+            }
+        }
+        return ans;
+    }
+}

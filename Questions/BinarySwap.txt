@@ -1,0 +1,33 @@
+Binary Swap
+You are given two binary strings A and B of equal length. You have a type of opertion in which you can swap any two elements of string B. Your task is to find the minimum number of operations required to convert string B into string A. If it is not possible, print -1.
+
+Input Format:
+
+First line contains string A.
+
+Second line contains string B.
+
+Output Format:
+
+Print the minimum number of operations required to convert string B into string A. If it is not possible, print -1.
+
+Constraints:
+
+|A|=|B|;|S|referstolengthofstringS
+
+1≤|A|≤105
+
+Sample Input
+1110
+1101
+Sample Output
+1
+Explanation
+You can swap the last and second last element in the string B. After swapping string B will become 1110. Therefore, only one operation is required to convert string B into string A.
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: Java, Java 8
