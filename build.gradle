@@ -3,8 +3,7 @@ apply plugin: 'java-library'
 
 
 repositories {
-    	maven { url "http://10.91.59.100:9090/artifactory/libs-release/" }
-    	maven { url "https://bhihoutfsnuget/maven2/Maven" }		
+    	mavenCentral()	
 }
 
 dependencies {
@@ -16,7 +15,6 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'    
-	compile group: 'org.springframework', name: 'spring-web', version: '1.5.2.RELEASE'
-	compile group: 'com.bhge.prod.link', name: 'prod-alarm-config-service-objects', version: '1.0.0'    
+	 
 }
 
