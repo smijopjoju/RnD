@@ -3,7 +3,8 @@ package my.rnd.practice.hackerrank;
 public class MinMaxSum {
 
     public static void main(String... args) {
-        miniMaxSum(new int[]{1, 3, 9, 7, 5});
+        miniMaxSum(new int[]{256741038, 623958417, 467905213, 714532089, 938071625});
+        //2063136757 2744467344
     }
 
     public static void miniMaxSum(int[] arr) {
@@ -20,12 +21,12 @@ public class MinMaxSum {
 
         }
 
-        int miniSum = 0;
+        Long miniSum = 0L;
         for (int index = 0; index < 4; ++index) {
             miniSum += arr[index];
         }
 
-        int maxSum = 0;
+        Long maxSum = 0L;
         for (int index = arr.length - 1; index >= 1; --index) {
             maxSum += arr[index];
         }
