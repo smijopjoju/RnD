@@ -1,5 +1,5 @@
 package my.rnd.practice.hackerrank;
-import java.lang.*;
+
 import java.util.Arrays;
 import java.util.List;
 
